@@ -17,19 +17,26 @@
             <!-- Los inputs tienen tipos, por defecto son de tipo
             texto, pero hay más-->
             <p>
-                <input type="text" name="name" placeholder="Ingresa tu nombre" />
+                <input type="text" name="name" placeholder="Ingresa tu nombre" autocomplete="off" required /> <!--REQUIRED es necesario llenar el campo-->
             </p>
 
             <p>
-                <input type="email" name="email" placeholder="Ingresa tu correo" />
+                <input type="email" name="email" readonly placeholder="Ingresa tu correo" value="ralph@gmail.com" /> <!--VALUE es valor por defecto--> <!-- READONLY se envia el dato en el formulario-->
             </p>
 
             <p>
-                <input type="password" name="password" placeholder="Escribe una contraseña segura" />
+                <input type="password" name="password" placeholder="Escribe una contraseña segura" disabled/> <!--DISABLED ese dato no se envía en el formulario-->
             </p>
 
             <p>
-                <input type="file" name="image"/>
+                <!--
+                    video/*
+                    audio/*
+                    pdf/*
+                    mp3/*
+                    image/*
+                -->
+                <input type="file" accept="image/*" name="image"/>
             </p>
 
             <p>
@@ -63,6 +70,9 @@
             </p>
             <p>
                 <input type="radio" name="option" checked /> Opción 3
+            </p>
+            <p>
+                <input type="color" name="bg_color">
             </p>
             <p>
                 <button type="submit">Enviar datos</button>
