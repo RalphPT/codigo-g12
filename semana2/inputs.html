@@ -5,27 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/semana2/css/styles.css">
     <title>Document</title>
+    
 </head>
+<!--<style>
+     p{
+        border: solid 1px red;
+        border-radius: 5px;
+        padding: 10px;
+     }
+</style>-->
 
 <body>
     <section>
-        <h1>Formularios</h1>
+        <h1 style="color: cadetblue; font-size: 60px;">Formularios</h1>
 
         <!-- Sirve para crear un formulario-->
         <form>
             <!-- Los inputs tienen tipos, por defecto son de tipo
             texto, pero hay más-->
             <p>
-                <input type="text" name="name" placeholder="Ingresa tu nombre" autocomplete="off" required /> <!--REQUIRED es necesario llenar el campo-->
+                <input type="text" name="name" class="form-input" placeholder="Ingresa tu nombre" autocomplete="off" required /> <!--REQUIRED es necesario llenar el campo-->
             </p>
 
             <p>
-                <input type="email" name="email" readonly placeholder="Ingresa tu correo" value="ralph@gmail.com" /> <!--VALUE es valor por defecto--> <!-- READONLY se envia el dato en el formulario-->
+                <input type="email" name="email" class="form-input" readonly placeholder="Ingresa tu correo" value="ralph@gmail.com" /> <!--VALUE es valor por defecto--> <!-- READONLY se envia el dato en el formulario-->
             </p>
 
             <p>
-                <input type="password" name="password" placeholder="Escribe una contraseña segura" disabled/> <!--DISABLED ese dato no se envía en el formulario-->
+                <input type="password" name="password" class="form-input" placeholder="Escribe una contraseña segura" disabled/> <!--DISABLED ese dato no se envía en el formulario-->
             </p>
 
             <p>
@@ -75,7 +84,7 @@
                 <input type="color" name="bg_color">
             </p>
             <p>
-                <button type="submit">Enviar datos</button>
+                <button id="boton-enviar" type="submit">Enviar datos</button>
             </p>
         </form>
     </section>
