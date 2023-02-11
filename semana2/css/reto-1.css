@@ -17,7 +17,12 @@
     align-items: center;
     height: 100vh;
   }
-  
+  .pointer{
+    cursor: pointer;
+  }
+  .none{
+    border: none;
+  }
   .card {
     width: 375px;
     background-color: hsl(213, 19%, 18%);
@@ -54,7 +59,6 @@
     padding: 15px;
     background-color: hsl(216, 12%, 54%);
     border-radius: 50%;
-    border: none;
     color: hsl(213, 19%, 18%);
     width: 40px;
     height: 40px;
@@ -72,7 +76,6 @@
     padding: 10px;
     background-color: hsl(25, 97%, 53%);
     color: #fff;
-    border: none;
     border-radius: 16px;
     text-transform: uppercase;
     letter-spacing: 3px;
