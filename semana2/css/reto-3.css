@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    width: 310px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 1px 2px 10px 9px rgba(0, 0, 0, 0.253);
+}
+
+/** div-img **/
+.cube-img{
+    width: 310px;
+    height: 310px;
+    border-radius: 8px;
+}
+
+.div-img{
+    margin-bottom: 15px;
+}
+
+/** div-body **/
+/** 1 **/
+.div-description{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 0.3px;
+}
+
+h3{
+    font-weight: bold;
+    color: white;
+    font-size: 21px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/** 2 **/
+.div-logo{
+    margin-top: 22px;
+    width: 100%;
+    display: flex;
+}
+
+.div-logo1{
+    width: 50%;
+    display: flex;
+}
+.div-logo1>p{
+    color: hsl(178, 100%, 50%);
+}
+.logo2{
+    justify-content: right;
+}
+.div-logo>.logo2>p{
+    color: hsl(215, 51%, 70%);
+}
+.icon-img{
+    margin-right: 7px;
+}
+
+/** div-foot **/
+
+.div-foot{
+    display: flex;
+    align-items: center;
+}
+.div-foot>img{
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.div-foot>p{
+    letter-spacing: 1px;
+}
+/**  &nbsp => hace un espacio**/
+.div-foot>.p1{
+    color: hsl(215, 51%, 70%);
+    margin-right: 5px;
+}
+.div-foot>.p2{
+    color: hsl(0, 0%, 100%);
+}
