@@ -9,36 +9,36 @@
     <link rel="stylesheet" href="./reto4.css">
 </head>
 <body>
-    <main>
+    <main class="flex items-center justify-center">
         <div class="container">
-            <div class="title">
+            <div class="title flex space-between">
                 <!-- title/modo-->
                 <h3>devfinder</h3>
-                <button class="mood">light <img width="20" src="./images/sun.png" alt=""></button>
+                <button class="mood flex items-center color-letter font-family">light <img width="20" src="./images/sun.png" alt=""></button>
             </div >
             <!--buscador-->
-            <div class="search">
+            <div class="search flex space-between items-center color-letter">
                 <img width="20" src="./images/search.png" alt="">
-                <input type="text" placeholder="Search Github username...">
-                <button>Search</button>
+                <input  class="font-family" type="text" placeholder="Search Github username...">
+                <button class="color-letter font-family">Search</button>
             </div>
             <!--resultado de búsqueda-->
-            <div class="result">
+            <div class="result flex">
                 <div>
                     <img class="avatar" width="200" src="https://revistabyte.es/wp-content/uploads/2018/06/github-octocat.jpg" alt="">
                 </div>
                 <div class="profile">
-                    <div class="profile-title">
+                    <div class="profile-title flex space-between">
                         <div>
                             <h3>The Octocat</h3>
                             <p class="username">@octocat</p>
                         </div>
                         <div>
-                            <p class="date">Joined 25 Jan 2011</p>
+                            <p class="date color-letter2">Joined 25 Jan 2011</p>
                         </div>
                     </div>
-                    <p class="about">This profile has no bio.</p>
-                    <div class="stats">
+                    <p class="about color-letter2 mt-20">This profile has no bio.</p>
+                    <div class="stats flex mt-20">
                         <div>
                             <h6>Repos</h6>
                             <p>8</p>
@@ -52,7 +52,7 @@
                             <p>9</p>
                         </div>
                     </div>
-                    <div class="social">
+                    <div class="social flex space-between items-center mt-20">
                         <div>
                             <img width="15" src="./images/marker.png" alt="">
                             <span>San Francisco</span>
@@ -62,7 +62,7 @@
                             <span>Not available</span>
                         </div>
                     </div>
-                    <div class="social">
+                    <div class="social flex mt-20">
                         <div>
                             <img width="15" src="./images/link.png" alt="">
                             <span>https://github.blog</span>

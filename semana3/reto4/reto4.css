@@ -9,41 +9,56 @@ body{
     color: #fff;
 }
 
+.flex{
+    display: flex;
+}
 
+.space-between{
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.color-letter{
+    color: #fff;
+}
+
+.color-letter2{
+    color: #ccc;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.font-family{
+    font-family: monospace, sans-serif;
+}
 
 main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
 .container{
-    
     width: 600px;
-}
-.title{
-    display: flex;
-    justify-content: space-between;
 }
 
 .mood{
     background: transparent;
-    color: #fff;
-    font-family: monospace, sans-serif;
     text-transform: uppercase;
     border: none;
-    display: flex;
-    align-items: center;
     gap: 15px; /* espacio entre elementos */
     cursor: pointer;
 }
 
 .search{
     margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: #313e67;
     padding: 10px;
     border-radius: 12px;
@@ -55,8 +70,6 @@ main{
     background-color: transparent;
     border: none;
     font-size: 18px;
-    color: #fff;
-    font-family: monospace, sans-serif;
 }
 
 ::placeholder/* Pseudoelemento */{
@@ -69,8 +82,6 @@ input:focus{
 
 .search button{
     border: none;
-    color: #fff;
-    font-family: monospace, sans-serif;
     background-color: #2250e9;
     padding: 10px;
     border-radius: 8px;
@@ -79,11 +90,10 @@ input:focus{
 }
 
 .result{
-    display: flex;
     background-color: #313e67;
     padding: 30px;
     border-radius: 12px;
-    margin-top: 30px;
+    margin-top: 25px;
     gap: 30px;
 }
 
@@ -98,30 +108,17 @@ input:focus{
     flex-grow: 1;
 }
 
-.profile-title{
-    display: flex;
-    justify-content: space-between;
-}
-
 .username{
     color: #05133f;
 }
 
 .date{
-    color: #ccc;
     font-size: 13px;
 }
 
-.about{
-    margin-top: 20px;
-    color: #ccc;
-}
-
 .stats{
-    display: flex;
     justify-content: space-around; /*acaaaaa*/
     background-color: #101b40;
-    margin-top: 20px;
     border-radius: 6px;
     padding: 10px;
     padding-top: 15px;
@@ -133,10 +130,6 @@ h6{
 }
 
 .social{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-size: 14px;
     gap: 30px;
 }
