@@ -1,18 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    font-family: monospace, sans-serif;
+.primary-color {
+    background-color: #101b40;
+}
+
+.secondary-color {
+    background-color: #313e67;
+}
+
+.text-white {
     color: #fff;
 }
 
-.flex{
+.primary-font {
+    font-family: monospace, sans-serif;
+}
+
+.flex {
     display: flex;
 }
 
-.space-between{
+.space-between {
     justify-content: space-between;
 }
 
@@ -20,128 +31,114 @@ body{
     align-items: center;
 }
 
-.justify-center{
+.justify-center {
     justify-content: center;
 }
 
-.color-letter{
-    color: #fff;
-}
-
-.color-letter2{
-    color: #ccc;
-}
-
-.mt-20{
+.mt-20 {
     margin-top: 20px;
 }
 
-.mt-30{
+.mt-30 {
     margin-top: 30px;
 }
 
-.font-family{
-    font-family: monospace, sans-serif;
-}
-
-.primary-color{
-    background-color: #101b40;
-}
-
-.border-none{
-    border: none;
-}
-
-.pointer{
-    cursor: pointer;
-}
-
-.p-10{
+.p-10 {
     padding: 10px;
 }
 
-main{
+.text-dark {
+    color: #ccc;
+}
+
+main {
     height: 100vh;
 }
 
-.container{
+.container {
     width: 600px;
 }
 
-.mood{
-    background: transparent;
-    text-transform: uppercase;
-    gap: 15px; /* espacio entre elementos */
+.border-none {
+    border: none;
 }
 
-.search{
-    background-color: #313e67;
+.pointer {
+    cursor: pointer;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.mood {
+    text-transform: uppercase;
+    gap: 15px;
+}
+
+.search {
     border-radius: 12px;
     gap: 20px;
 }
 
-.search input{
+.flex-grow-1 {
     flex-grow: 1;
-    background-color: transparent;
+}
+
+.search input {
     font-size: 18px;
 }
 
-::placeholder/* Pseudoelemento */{
-    color: #fff;
-    font-family: monospace, sans-serif;
+.rounded-8 {
+    border-radius: 8px;
 }
-input:focus{
+
+input::placeholder {
+    color: #fff;
+}
+
+input:focus {
     outline: none;
 }
 
-.search button{
+.search button {
     background-color: #2250e9;
-    border-radius: 8px;
     font-size: 16px;
 }
 
-.result{
-    background-color: #313e67;
+.result {
     padding: 30px;
     border-radius: 12px;
     gap: 30px;
 }
 
-.avatar{
-    width: 140px;
-    height: 140px;
+.avatar {
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-    border-radius: 50%;    
+    border-radius: 50%;
 }
 
-.profile{
-    flex-grow: 1;
-}
-
-.username{
+.username {
     color: #05133f;
+    margin-top: 5px;
 }
 
-.date{
+.date {
     font-size: 13px;
 }
 
-.stats{
-    justify-content: space-around; /*acaaaaa*/
-    border-radius: 6px;
+.stats {
+    justify-content: space-around;
     padding-top: 15px;
     padding-bottom: 20px;
 }
 
-h6{
-    color: #ccc;
-}
-
-.social{
+.social {
     font-size: 14px;
     gap: 30px;
 }
 
-.social div{
+.social div {
     width: 50%;
 }
