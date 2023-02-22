@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reto6.css">
+</head>
+<body>
+    <header>
+        <img src="./images/logo (1).svg" alt="">
+    </header>
+    
+    <div class="general-calc">
+        <div class="data-calc">
+            <h1>Bill</h1>
+            <label for=""><input class="input-bill" type="number" value="0" min="0"></label>
+            <h2>Select Tip %</h2>
+            <ul>
+                <li><button class="percentage-button">5%</button></li>
+                <li><button class="percentage-button">10%</button></li>
+                <li><button class="percentage-button">15%</button></li>
+                <li><button class="percentage-button">25%</button></li>
+                <li><button class="percentage-button">50%</button></li>
+                <li><Input type="number" placeholder="Custom" class="percentage-button"></Input></li>
+            </ul>
+            <h2>Number of People</h2>
+            <label for=""><input class="input-people" type="number" value="1" min="0"></label>
+        </div>
+        <div class="result-calc">
+            <div class="result-txt">
+                <div class="tip-amount">
+                    <div>
+                        <h2 class="txt-margin">Tip Amount</h2>
+                        <p>/ person</p>
+                    </div>
+                    <h3>$<span>0</span></h3>
+                </div>
+                <div class="total-amount">
+                    <div>
+                        <h2 class="txt-margin">Total</h2>
+                        <p>/ person</p>
+                    </div>
+                    <h3>$<span>0</span></h3>
+                </div>
+            </div>
+            <button class="btn-reset" type="button">RESET</button>
+        </div>
+    </div>
+</body>
+</html>
