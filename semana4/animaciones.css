@@ -1,0 +1,57 @@
+/* .square{
+    width: 300px;
+    height: 300px;
+    background: red;
+    animation: animacion-square 5s;
+}
+
+@keyframes animacion-square{
+    from{
+        margin-top: 300px;
+        margin-left: 200px;
+    }
+    to{
+        background-color: yellow;
+    }
+} */
+
+.square{
+    border: solid;
+}
+
+.techs{
+    animation: movimiento 10s infinite;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+/* nota::
+Si quieren usar
+top, left, right, bottom
+requieren asignar un position
+al elemento padre
+*/
+
+@keyframes movimiento{
+    0% {
+        left: -1000px;
+    }
+    20%{
+        color: red;
+    }
+    50% {
+        left: 50%;
+        left: 1000px;
+    }
+    75%{
+        left: 75%;
+    }
+    85%{
+        color: purple;
+        background-color: yellow;
+    }
+    100%{
+        left: -1000px;
+    }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
@@ -12,6 +12,12 @@
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="./index.css" />
+
+    <!-- Script de confeti -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"
+      defer></script>
+
     <script src="./index.js" defer></script>
 
 </head>
@@ -33,7 +39,7 @@
     <main class="m-auto">
         <section class="profile">
             <div class="inner-profile m-max-width flex items-center content-center m-auto">
-                <div>
+                <div class="profile-text">
                     <h1 class="title">Hi, I'm Rafael,</h1>
                     <h1 class="title">Software Developer</h1>
                     <p class="about">
@@ -65,49 +71,56 @@
         </section>
         <section class="works">
             <div class="m-max-width m-auto pt-30">
-                <div class="challenges-container">
+                <h2 style="color:#fff;">Featured works</h2>
+                <div class="challenges-container flex items-center">
                     <div class="challenges flex pt-30">
                         <div class="card shadow">
-                            <h3>Titulo del reto</h3>
-                            <p>Description del reto hecho</p>
-                            <img src="" alt="" />
-                            <a href="">Ver repositorio</a>
+                            <img src="./images/challenge/challenge-1.png" alt="" />
+                            <div class="card-body">
+                                <h3>How did we do?</h3>
+                                <p>Reto de FrontEnd BASIC</p>
+                                <a href="">Ver repositorio</a>
+                            </div>
                         </div>
                         <div class="card shadow">
-                            <h3>Titulo del reto</h3>
-                            <p>Description del reto hecho</p>
-                            <img src="" alt="" />
-                            <a href="">Ver repositorio</a>
+                            <img src="./images/challenge/challenge-2.png" alt="" />
+                            <div class="card-body">
+                                <h3>Challenge QR</h3>
+                                <p>Reto de FrontEnd BASIC</p>
+                                <a href="">Ver repositorio</a>
+                            </div>
                         </div>
                         <div class="card shadow">
-                            <h3>Titulo del reto</h3>
-                            <p>Description del reto hecho</p>
-                            <img src="" alt="" />
-                            <a href="">Ver repositorio</a>
+                            <img src="./images/challenge/challenge-3.png" alt="" />
+                            <div class="card-body">
+                                <h3>Equilibrium</h3>
+                                <p>Reto de FrontEnd BASIC</p>
+                                <a href="">Ver repositorio</a>
+                            </div>
                         </div>
                         <div class="card shadow">
-                            <h3>Titulo del reto</h3>
-                            <p>Description del reto hecho</p>
-                            <img src="" alt="" />
-                            <a href="">Ver repositorio</a>
+                            <img src="./images/challenge/challenge-4.png" alt="" />
+                            <div class="card-body">
+                                <h3>Github Search</h3>
+                                <p>Reto de FrontEnd BASIC</p>
+                                <a href="">Ver repositorio</a>
+                            </div>
                         </div>
                         <div class="card shadow">
-                            <h3>Titulo del reto</h3>
-                            <p>Description del reto hecho</p>
-                            <img src="" alt="" />
-                            <a href="">Ver repositorio</a>
+                            <img src="./images/challenge/challenge-5.png" alt="" />
+                            <div class="card-body">
+                                <h3>Lading Page</h3>
+                                <p>Reto de FrontEnd BASIC</p>
+                                <a href="">Ver repositorio</a>
+                            </div>
                         </div>
                         <div class="card shadow">
-                            <h3>Titulo del reto</h3>
-                            <p>Description del reto hecho</p>
-                            <img src="" alt="" />
-                            <a href="">Ver repositorio</a>
-                        </div>
-                        <div class="card shadow">
-                            <h3>Titulo del reto</h3>
-                            <p>Description del reto hecho</p>
-                            <img src="" alt="" />
-                            <a href="">Ver repositorio</a>
+                            <img src="./images/challenge/challenge-6.png" alt="" />
+                            <div class="card-body">
+                                <h3>Calculator Splitter</h3>
+                                <p>Reto de FrontEnd BASIC</p>
+                                <a href="">Ver repositorio</a>
+                            </div>
                         </div>
                     </div>
                     <div class="challenges-buttons">
