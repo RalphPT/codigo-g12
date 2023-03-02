@@ -167,3 +167,48 @@ console.log(r5);
 console.log(r6);
 console.log(r7);
 console.log(r8);
+
+
+// Funciones anonimas
+console.log("Funciones anonimas");
+
+/**
+ * Esta funcion sirve para calcular el area de un rectangulo
+ * @param {number} base 
+ * @param {number} altura 
+ * @returns {number}
+ */
+
+const calcularAreaRectangulo = function (base , altura){
+    return base * altura;
+}
+
+console.log(calcularAreaRectangulo(10, 20));
+
+// FUNCIONES TIPO FLECHA => arrow functions
+
+/**
+ * Esta función sirve para poder decifrar una moneda    
+ * @param {string} moneda 
+ * @returns {string}
+ */
+const decifrarMoneda = (moneda) => {
+    if (moneda === "S/") return "Soles";
+    if (moneda === "$") return "Dolares";
+    if (moneda === "MXN") return "Pesos Mexicanos";
+    return moneda;
+};
+
+console.log(decifrarMoneda("S/"));
+
+/**
+ * Esta funcion sirve para calcular el areade una rectangulo
+ * @param {string} base 
+ * @param {number} altura 
+ * @returns {number}
+ */
+
+// arrow function inline // solo se usa cuando retornamos algo simple
+const calcularRectangulo = (base, altura) => base * altura;
+
+console.log(calcularRectangulo(100, 200))
