@@ -1,0 +1,740 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Space Mono', monospace;
+}
+
+:root {
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+    --pinterest: #E60023;
+}
+
+.container {
+    display: block;
+    /* grid-template-areas:
+        "orange-head orange-head orange-head orange-head"
+        "features features features feature"
+        "features features features feature"
+        "features features features feature"
+        "testimonials testimonials testimonials testimonials"
+        "gallery gallery gallery gallery"
+        "foot-info foot-info foot-info foot-info";
+    grid-template-rows: 100vh 85vh; */
+}
+
+p{
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/*HEADER*/
+
+.orange-head {
+    
+    background-image: url(./images/desktop/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 1.9rem;
+    height: 100vh;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 8rem;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+.references>ul {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+    margin: 15px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+
+
+li:nth-child(4) a {
+    background-color: #fff;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 13px 14px;
+    font-weight: 100;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    /* 
+    transition: .3s;
+     */
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header-text>h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .5rem;
+    font-weight: 900;
+    margin: 4rem;
+    font-family: 'Fraunces', serif;
+    text-align: center;
+}
+
+/* FEATURES BEGINNING */
+/*ABOUT BEGINNING*/
+.features-about{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 
+    "about1 image1"
+    "image2 about2";
+}
+
+.about{
+    max-width: 65%;
+    text-align: left;
+    padding: 1.5em;
+    color: #23303e;
+    margin: auto;
+}
+
+.about1{
+    grid-area: about1;
+}
+
+.about >h2{
+    margin: 0;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.about > p{
+    text-align: left;
+    color: #818498;
+    padding: 1.5em 0;
+}
+
+.about > a{
+    text-align: left;
+    margin-left: 1em;
+    text-decoration: none;
+    font-family: "Fraunces";
+    color: #23303e;
+    text-transform: uppercase;
+    font-size: 0.94;
+    font-weight: 900;
+    position: relative;
+    display: block;
+}
+
+.about__image{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.about__image--one{
+    grid-area: image1;
+}
+
+.about2{
+    grid-area: about2;
+}
+
+.about__image--two{
+    grid-area: image2;
+}
+/*ABOUT END*/
+
+/*SERVICES BEGGINING*/
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(1, 85vh);
+}
+
+.text-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 28px;
+    margin: 0 154px;
+}
+
+.text-feature>h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 37px;
+}
+
+.text-feature>p {
+    font-family: 'Barlow', sans-serif;
+    line-height: 28px;
+    color: hsl(210, 4%, 67%);
+    font-weight: 100;
+}
+
+.size-feature>h2 {
+    font-size: 34.6px;
+}
+
+.text-feature>li {
+    list-style: none;
+}
+
+.text-feature>li>a {
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+}
+
+.div-feature-size {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.div-end-feature {
+    position: relative;
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+}
+
+.div-end-feature2 {
+    position: relative;
+    background-image: url(./images/desktop/image-photography.jpg);
+}
+
+.text-end-feature {
+    position: absolute;
+    text-align: center;
+    bottom: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Barlow', sans-serif;
+    color: hsl(213, 9%, 39%);
+}
+
+.text-end-feature>h2 {
+    margin-bottom: 30px;
+    font-family: 'Fraunces', serif;
+}
+
+/* .services{
+    display: flex;   
+}
+
+.service{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.service > h3{
+    left: 35%;
+    top: 60%;
+    font-size: 2rem;
+}
+
+.service > p{
+    font-size: 1.125rem;
+    max-width: 60%;
+    top: 70%;
+    left: 22%;
+}
+
+.service h3, .service p{
+    content: "";
+    position: absolute;
+}
+
+.service--gren{
+    color: #25564b;
+} */
+
+/*TESTIMONIALS*/
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: 'Barlow', sans-serif;
+    color: hsl(210, 4%, 67%);
+    padding: 5em;
+}
+
+.testimonials>h2 {
+    text-align: center;
+    letter-spacing: 10px;
+    font-family: 'Fraunces', serif;
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+
+    font-size: 18px;
+    justify-content: center;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 3em 0 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.card>img {
+    border-radius: 50%;
+    height: 100px;
+    width: auto;
+    
+}
+
+.card>p {
+    line-height: 25px;
+    max-width: 90%;
+    padding: 3em 0 3em;
+    color: hsl(212, 27%, 19%);
+    
+}
+
+.card>h3 {
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    margin-bottom: 1rem;
+}
+
+.testimonial-cards {
+    display: flex;
+
+}
+
+/*GALLERY*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    width: 100%;
+
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*FOOTER*/
+
+.foot-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(168, 32%, 55%);
+}
+
+
+.foot-info img {
+    filter: invert(1) brightness(0);
+    width: 9rem;
+    margin-top: 4.5rem;
+
+}
+
+.foot-info nav {
+    margin-top: 3rem;
+}
+
+
+.foot-info nav>ul {
+    display: flex;
+    gap: 65px;
+    list-style: none;
+}
+
+.foot-info a {
+    color: hsl(167, 40%, 24%);
+    font-size: 1.3rem;
+    transition: .35s;
+}
+
+.foot-info a:hover {
+    color: #Fff;
+    transform: .35s;
+}
+
+.social-container {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    gap: 25px;
+}
+
+.social-container>ul>li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.social-container ul li a {
+    display: block;
+    padding: 0 10px;
+    background-color: #333;
+    color: white;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, .9);
+    transition: .2s;
+    text-align: center;
+}
+
+.social-container ul:hover a {
+    filter: blur(5px);
+
+}
+
+.social-container ul li a:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, .9);
+    filter: none;
+}
+
+.social-container ul li .facebook:hover {
+    background-color: var(--facebook);
+}
+
+.social-container ul li .instagram:hover {
+    background-color: var(--instagram);
+}
+
+.social-container ul li .twitter:hover {
+    background-color: var(--twitter);
+}
+
+.social-container ul li .pinterest:hover {
+    background-color: var(--pinterest);
+}
+
+@media screen and (max-width:988px) {
+
+    .nav-toggle{
+        display: block;
+        background: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 40px;
+        /* border: 0;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        z-index: 1000; */
+    }
+
+    .references {
+        display: none;
+    }
+
+    .features-about{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "image1"
+        "about1"
+        "image2"
+        "about2";
+    }
+
+    .services{
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(2, 85vh);
+    }
+    .testimonial-cards{
+        flex-direction: column;
+    } 
+
+    .about{
+        padding: 5em 0;
+    }
+    .about >h2{
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    .about > p{
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.1em 0;
+    }
+    
+    .about > a{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .about1{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+    }
+    .about2{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50vh);
+        width: 100%;
+    
+    }
+}
+    /*.features {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .feat-inverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .feat {
+        display: grid;
+        grid-template-columns: 100vw;
+    }
+
+    .egg-image {
+        
+    }
+
+    .cup-image {
+        
+    }
+
+    .text-feature>h2 {
+        font-family: 'Fraunces', serif;
+        font-size: 70px;
+        margin-bottom: 25px;
+    }
+
+    .text-feature>p {
+        line-height: 40px;
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .featcup2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .text-feature {
+        height: 110vh;
+        text-align: center;
+    }
+
+    .text-feature a {
+        font-size: 20px;
+    }
+
+    .featcup2 img {
+        height: 85vh;
+    }
+
+    .feat2 {
+        display: grid;
+        grid-template-columns: repeat(1, 100vw);
+        grid-template-rows: repeat(2, 85vh);
+    }
+
+    .div-feature-size{
+        
+    }*/
+
+
+
+ 
+
+/*480*/
+
+
+@media screen and (max-width:600px) {
+
+
+
+    .about{
+        padding: 6em 0;
+    }
+    .about >h2{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    
+    .about > p{
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.1em 0;
+    }
+    
+    .about > a{
+        text-align: center;
+        font-size: 1rem;
+    }
+    /* .references {
+        display: none;
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .feat-inverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .feat {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .egg-image {
+        width: 100vw;
+    }
+
+    .cup-image {
+        width: 100vw;
+    }
+
+    .text-feature>h2 {
+        font-family: 'Fraunces', serif;
+        font-size: 70px;
+        margin-bottom: 25px;
+    }
+
+    .text-feature>p {
+        line-height: 40px;
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .featcup2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .text-feature {
+        height: 110vh;
+        text-align: center;
+    }
+
+    .text-feature a {
+        font-size: 20px;
+    }
+
+    .featcup2 img {
+        height: 85vh;
+    }
+
+    .feat2 {
+        display: grid;
+        grid-template-columns: repeat(1, 100vw);
+        grid-template-rows: repeat(2, 85vh);
+    }
+
+    .div-feature-size{
+        
+    } */
+    /* .references{
+        display: none;
+    }
+
+
+
+
+    .features{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .feat{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .feat-inverse{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .featcup2{
+        flex-direction: column-reverse;
+    }
+    .feat2{
+        display: grid;
+        grid-template-columns: repeat(1, 100vw);
+        grid-template-rows: repeat(2, 50vh);
+    } */
+}
