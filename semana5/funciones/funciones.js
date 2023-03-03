@@ -203,7 +203,7 @@ console.log(decifrarMoneda("S/"));
 
 /**
  * Esta funcion sirve para calcular el areade una rectangulo
- * @param {string} base 
+ * @param {number} base 
  * @param {number} altura 
  * @returns {number}
  */
