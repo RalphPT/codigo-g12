@@ -27,9 +27,9 @@ const cursosDeProgramacion = ["js", "CSS", "html", "REACT"];
 
 console.log(cursosDeProgramacion);
 console.log("indice 0", cursosDeProgramacion[0]);
-console.log("indice 0", cursosDeProgramacion[1]);
-console.log("indice 0", cursosDeProgramacion[2]);
-console.log("indice 0", cursosDeProgramacion[3]);
+console.log("indice 1", cursosDeProgramacion[1]);
+console.log("indice 2", cursosDeProgramacion[2]);
+console.log("indice 3", cursosDeProgramacion[3]);
 
 let datosVariados = ["mouse", true, 100, null, -10, "hola"];
 

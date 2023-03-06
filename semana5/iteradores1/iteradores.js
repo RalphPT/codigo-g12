@@ -10,7 +10,7 @@ const celulares = ["iPhone", "Samsung", true, "Xiaomi", null, "Nokia"];
 
 console.log("--- Bucle FOR ---");
 
-for (let i = 0; i < celulares.length; i++){
+for (let i = 0; i < celulares.length; i++) {
     console.log(celulares[i]);
 }
 
@@ -18,7 +18,7 @@ console.log("--- Bucle FOR OF ---");
 
 let contador = 0;
 
-for (let celular of celulares){
+for (let celular of celulares) {
     console.log(celular);
 }
 
@@ -27,21 +27,21 @@ for (let celular of celulares){
 
 // for (let celular of celulares){
 //     if(contador % 2 === 0) console.log(celular);
-    
+
 //     contador ++
 // }
 
 console.log("--- Bucle FOR IN ---");
 
 for (let celularIndice in celulares) {
-    if(celularIndice % 2 === 0) console.log(celularIndice, celulares[celularIndice]);
+    if (celularIndice % 2 === 0) console.log(celularIndice, celulares[celularIndice]);
 }
 
 // Hacer una función que detecte si un número es primo o no primo.
 console.log("---- Resolviendo problemas ---");
-function saberSiNumeroEsPrimo (numero){
-    for (let i=1; i<=numero; i++){
-        if(numero % i === 0){
+function saberSiNumeroEsPrimo(numero) {
+    for (let i = 1; i <= numero; i++) {
+        if (numero % i === 0) {
             console.log(i);
         }
     }
@@ -53,14 +53,14 @@ saberSiNumeroEsPrimo(10);
 console.log("---- Resolviendo problemas 2 ---");
 
 function saberSiNumEsPrimo(numero) {
-  let contador = 0;
-  
-  for (let i = 1; i <= numero; i++) {
-    if (numero % i === 0) contador++;
-  }
+    let contador = 0;
 
-  if (contador === 2) return "Es primo";
-  return "No es primo";
+    for (let i = 1; i <= numero; i++) {
+        if (numero % i === 0) contador++;
+    }
+
+    if (contador === 2) return "Es primo";
+    return "No es primo";
 }
 
 console.log(saberSiNumEsPrimo(7));
@@ -75,19 +75,20 @@ resultado: la letra a se repite 4 veces
  */
 
 function contarA(frase) {
-    const arrayFrase = frase.toLowerCase().replaceAll(" ","").split("");
+    const arrayFrase = frase.toLowerCase().replaceAll(" ", "").split("");
 
     let contador = 0;
 
-    for (let letra of arrayFrase){
-        if (letra === "a" || letra ==="A") contador++;
+    for (let letra of arrayFrase) {
+        if (letra === "a" || letra === "A") contador++;
     }
     return contador;
 }
 console.log(contarA("ama de casa"));
 
 // function contarARefactor(frase){
-//     return frase.toLowerCase().split("").filter((letra) => letra === "a").length;
-// console.log(contarARefactor(frase)); || return frase;
-// }
+//    return frase.toLowerCase().split("").filter((letra) => letra === "a").length;
+// console.log(contarARefactor(frase)); //|| return frase;
+//  }
 
+// console.log(contarARefactor("ama de casa"))
