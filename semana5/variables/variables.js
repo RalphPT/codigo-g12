@@ -15,7 +15,7 @@ console.log(curso);
 // Guardar mas de un valor en una variable
 // array - arreglo
 
-//camelcase
+//camelcase ejm: cursosDeProgramacion *estructura de variable*
 
 /**
  * cada elemento de un array tiene indices
