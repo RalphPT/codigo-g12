@@ -85,7 +85,7 @@ function contarA(frase) {
     return contador;
 }
 console.log(contarA("ama de casa"));
-
+// añadido de prueba
 // function contarARefactor(frase){
 //    return frase.toLowerCase().split("").filter((letra) => letra === "a").length;
 // console.log(contarARefactor(frase)); //|| return frase;
