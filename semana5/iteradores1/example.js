@@ -1,2 +1,2 @@
-let mensaje = 'casucha a';
-console.log(mensaje.replaceAll(" ", "").split(" ")); 
+let mensaje = 'casucha de juan';
+console.log(mensaje.replaceAll(" ", "").split("")); 
