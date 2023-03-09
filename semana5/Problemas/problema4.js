@@ -3,3 +3,8 @@ function cubo(numero) {
     return Math.pow(numero, 3);
 }
 console.log(cubo(4));
+
+// function cuadrado(numero) {
+//     return numero ** 3;
+// }
+// console.log(cuadrado(4));
