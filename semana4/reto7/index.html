@@ -10,11 +10,11 @@
   </head>
   <body>
     <main>
-      <div>
+      <div class="container">
         <h1>Codigo - Peliculas</h1>
         <form action="">
           <div>
-            <input id="name" type="text" placeholder="Nombre:" />
+            <input id="name" type="text" placeholder="Nombre:" required />
           </div>
           <div>
             <textarea
@@ -23,15 +23,20 @@
               id="description"
               cols="30"
               rows="10"
+              required
             ></textarea>
           </div>
           <div>
-            <input type="text" id="image" placeholder="Imagen" />
+            <input type="text" required id="image" placeholder="Imagen" />
           </div>
           <div>
             <button type="submit">Guardar</button>
           </div>
         </form>
+      </div>
+      <div class="mt-30">
+        <h2>Catalogo de Peliculas</h2>
+        <div class="movies mt-30"></div>
       </div>
     </main>
   </body>
