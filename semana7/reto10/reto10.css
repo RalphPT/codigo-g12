@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url(./3294.jpg);
+    background-size: 25%;
+}
+main{
+    background-color: rgba(0, 229, 255, 0.494);
+}
+.gallery{
+    padding: 15px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: auto;
+    gap: 30px;
+}
+
+.gallery img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: ease 0.5s;
+    border-radius: 25px;
+}
+
+.gallery img:hover{
+    box-shadow: 15px 5px 15px 5px rgba(0, 0, 0, 0.563);
+    transition: ease 0.5s;
+    transform: scale(108%);
+}

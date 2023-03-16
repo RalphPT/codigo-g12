@@ -1,7 +1,7 @@
 //input
 const pokemonName = document.querySelector(".input-text");
-const picture = document.querySelector("img")
-const nameText = document.querySelector("h2")
+const pokemonesContainer = document.querySelector("image")
+// const nameText = document.querySelector("h2")
 
 //
 
@@ -14,7 +14,7 @@ form.onsubmit = function (event) {
     event.preventDefault();
 
     pokemones.push({ name: pokemonName.value });
-    pokemones.value = "";
+    pokemonName.value = "";
 }
 
 async function getPokemones() {
@@ -25,12 +25,13 @@ async function getPokemones() {
 
 }
 
-function renderPokemones() {
+function renderPokemones(pokemones) {  
 
-    picture.textContent = URL.tofixed();
-    nameText.textContent = .tofixed();
-    // pokemonesContainer.innerHTML =`
-    // <div class="poke.description">
-    //     <h2>${}</h2>
-    // </div>`
+    pokemones.forEach((pokemone) => {
+        pokemonesContainer.innerHTML = `
+         <div class="poke-description">
+            <h2>${pokemone.name}</h2>
+        </div>`
+    });
+
 }
