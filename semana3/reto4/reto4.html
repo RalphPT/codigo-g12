@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <script src="./reto4.js" defer></script>
     <link rel="stylesheet" href="./reto4.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sudenstrike/codigo-g12-css/base.css"> -->
 </head>
@@ -20,43 +20,43 @@
             <!--buscador-->
             <div class="search flex space-between items-center color-letter mt-30 p-10">
                 <img width="20" src="./images/search.png" alt="">
-                <input  class="font-family border-none" type="text" placeholder="Search Github username...">
-                <button class="color-letter font-family border-none pointer p-10">Search</button>
+                <input  id="input-text" class="font-family border-none" type="text" placeholder="Search Github username...">
+                <button type="submit" id="btn-search" class="color-letter font-family border-none pointer p-10">Search</button>
             </div>
             <!--resultado de búsqueda-->
             <div class="result flex mt-30">
                 <div>
-                    <img class="avatar" width="200" src="https://revistabyte.es/wp-content/uploads/2018/06/github-octocat.jpg" alt="">
+                    <img id="avatar" class="avatar" width="200" src="https://revistabyte.es/wp-content/uploads/2018/06/github-octocat.jpg" alt="">
                 </div>
                 <div class="profile">
                     <div class="profile-title flex space-between">
                         <div>
-                            <h3>The Octocat</h3>
-                            <p class="username">@octocat</p>
+                            <h3 id="name">The Octocat</h3>
+                            <p id="username" class="username">@octocat</p>
                         </div>
                         <div>
-                            <p class="date color-letter2">Joined 25 Jan 2011</p>
+                            <p id="dateJoined" class="date color-letter2">Joined 25 Jan 2011</p>
                         </div>
                     </div>
                     <p class="about color-letter2 mt-20">This profile has no bio.</p>
                     <div class="stats flex mt-20 primary-color p-10">
                         <div>
                             <h6>Repos</h6>
-                            <p>8</p>
+                            <p class="repos">8</p>
                         </div>
                         <div>
                             <h6>Followers</h6>
-                            <p>3938</p>
+                            <p class="followers">3938</p>
                         </div>
                         <div>
                             <h6>Following</h6>
-                            <p>9</p>
+                            <p class="following">9</p>
                         </div>
                     </div>
                     <div class="social flex space-between items-center mt-20">
                         <div>
                             <img width="15" src="./images/marker.png" alt="">
-                            <span>San Francisco</span>
+                            <span class="location">San Francisco</span>
                         </div>
                         <div>
                             <img width="15" src="./images/twitter.png" alt="">
@@ -66,11 +66,11 @@
                     <div class="social flex mt-20">
                         <div>
                             <img width="15" src="./images/link.png" alt="">
-                            <span>https://github.blog</span>
+                            <span class="github">https://github.blog</span>
                         </div>
                         <div>
                             <img width="15" src="./images/building.png" alt="">
-                            <span>@github</span>
+                            <span class="gitUser">@github</span>
                         </div>
                     </div>
                 </div>
