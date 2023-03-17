@@ -12,9 +12,9 @@ btnTranslate.onclick = async function () {
         {
             method: "POST",
             headers: {
-                'content-type': 'application/x-www-form-urlencoded',
-                'X-RapidAPI-Key': '87ee5cfc9amsh5ae31df712459aap1a1795jsnfa024c28690a',
-                'X-RapidAPI-Host': 'text-translator2.p.rapidapi.com'
+                "content-type": "application/x-www-form-urlencoded",
+                "X-RapidAPI-Key": "87ee5cfc9amsh5ae31df712459aap1a1795jsnfa024c28690a",
+                "X-RapidAPI-Host": "text-translator2.p.rapidapi.com"
             },
             body: encodedParams,
         }
