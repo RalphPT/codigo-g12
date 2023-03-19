@@ -12,6 +12,8 @@ const tasks = document.querySelector(".tasks");
 const apiURL = "https://641523a54f32ca32918f7bb9.mockapi.io/tasks";
 
 containerForm.onsubmit = async function (event) {
+
+    
     //para evitar que la web cargue
     event.preventDefault();
 
@@ -31,6 +33,8 @@ containerForm.onsubmit = async function (event) {
     const data = await response.json();
     // console.log(data);   
     input.value ="";
+    getTareas();
+    /* renderTareas(); */
 };
 
 
@@ -43,6 +47,7 @@ async function getTareas(){
 }
 
 function renderTareas(tareas){
+    tasks.innerHTML = "";
     tareas.forEach((tarea) => {
         tasks.innerHTML +=`
         <div>
@@ -52,3 +57,4 @@ function renderTareas(tareas){
 }
 
 getTareas();
+
