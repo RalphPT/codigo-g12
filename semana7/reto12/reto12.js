@@ -31,9 +31,7 @@ containerForm.onsubmit = async function (event) {
     const data = await response.json();
     // console.log(data);   
     input.value ="";
-    
 };
-
 
 
 async function getTareas(){
