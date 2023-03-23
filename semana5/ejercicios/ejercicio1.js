@@ -8,3 +8,5 @@ function elevarAlCuadrado(num) {
 
 const potencia = elevarAlCuadrado(5)
 console.log(potencia)
+
+ 
