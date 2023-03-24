@@ -2,8 +2,24 @@
 const containerForm = document.querySelector("#container-form");
 const input = document.querySelector("input");
 const tasks = document.querySelector(".tasks");
+const backdrop = document.querySelector(".backdrop-container");
+const body = document.querySelector("body");
+const backdropChild = document.querySelector(".backdrop");
+
+function showOrHideBackDrop(show = true) {
+    backdrop.style.display = show ? "block" : "none";
+    backdropChild.style.height = `${body.offsetHeight} px`;
+    body.style.overflow = show ? "hidden" : "auto";
+
+    // if(show){
+    //     backdrop.style.display ="block"
+    // } else{
+    //     backdrop.style.display = "none"
+    // }
+}
 
 async function deleteTask(element) {
+    showOrHideBackDrop(true);
     const ok = await destroy(element.dataset.id);
 
     if (!ok) {
@@ -13,6 +29,7 @@ async function deleteTask(element) {
 
     // element = button
     element.closest(".card").style.display = "none";
+    showOrHideBackDrop(false);
     // element.parentElement.parentElement.parentElement.style.display = "none";
 }
 
@@ -33,6 +50,7 @@ async function updateTask(id) {
 }
 
 async function endTask(id) {
+    showOrHideBackDrop();
     const ok = await put(id, { status: 2 });
 
     if (!ok) {
@@ -44,6 +62,7 @@ async function endTask(id) {
     const cardButtons = document.querySelector(`#card-buttons-${id}`);
     card.classList.add("bg-success-subtle");
     cardButtons.remove();
+    showOrHideBackDrop(false);
 }
 
 function renderTask(task) {
@@ -66,6 +85,10 @@ function renderTask(task) {
     </div>`;
 }
 
+function orderArray(array) {
+    return array.sort((a, b) => a.name.localeCompare(b.name));
+  }
+
 // crear una funcion que liste (get) las tareas
 async function getTasks() {
     const data = await get();
@@ -86,7 +109,7 @@ containerForm.onsubmit = async function (event) {
     const listTasks = await get();
     const search = listTasks.find((task) => task.name === input.value); // Aquí se hace la búsqueda si un elemento existe en el objeto
 
-    if (search) {alert("La tarea ya existe"); input.value = ""; return;}
+    if (search) { alert("La tarea ya existe"); input.value = ""; return; }
 
     const data = await post({
         name: input.value,
