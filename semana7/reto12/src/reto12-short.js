@@ -120,3 +120,12 @@ containerForm.onsubmit = async function (event) {
 
     console.log(data);
 };
+
+const styleSheet = {
+    position: 'fixed',
+    top: '0',
+    bottom: '0',
+    backgroundColor: 'rgba(0,0,0, 0.8)',
+}
+
+Object.assign(backdropChild.style, styleSheet);
