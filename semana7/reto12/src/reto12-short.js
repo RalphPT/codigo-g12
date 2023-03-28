@@ -50,7 +50,7 @@ async function updateTask(id) {
 }
 
 async function endTask(id) {
-    showOrHideBackDrop();
+    showOrHideBackDrop(true);
     const ok = await put(id, { status: 2 });
 
     if (!ok) {
